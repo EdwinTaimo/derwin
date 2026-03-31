@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DERWIN — Sapatilhas Premium | Beira, Sofala, Moçambique</title>
+  <meta name="description" content="DERWIN — Sapatilhas premium em Beira, Sofala e Moçambique. Estilo, conforto e qualidade ao seu alcance."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo">DERWIN</a>
+    <div class="nav-links">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <button class="hamburger" id="menuBtn" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#catalogo" onclick="closeMobile()">Catálogo</a>
+    <a href="#sobre" onclick="closeMobile()">Sobre</a>
+    <a href="#contacto" onclick="closeMobile()">Contacto</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <div class="hero-shape s1"></div>
+    <div class="hero-shape s2"></div>
+    <div class="hero-shape s3"></div>
+  </div>
+  <div class="hero-content">
+    <p class="hero-tagline">Nova Colecção 2025</p>
+    <h1 class="hero-title">
+      <span class="line l1">PISA</span>
+      <span class="line l2">COM</span>
+      <span class="line l3">ESTILO</span>
+    </h1>
+    <p class="hero-sub">Sapatilhas premium entregues na Beira &amp; Sofala</p>
+    <div class="hero-ctas">
+      <a href="#catalogo" class="btn-primary">Ver Catálogo</a>
+      <a href="#contacto" class="btn-ghost">Encomendar</a>
+    </div>
+  </div>
+  <div class="hero-badge">
+    <span>BEIRA</span>
+    <span>·</span>
+    <span>SOFALA</span>
+    <span>·</span>
+    <span>MOÇ</span>
+  </div>
+  <div class="scroll-hint">↓ Explorar</div>
+</section>
+
+<!-- STRIP -->
+<div class="ticker-strip">
+  <div class="ticker">
+    <span>QUALIDADE PREMIUM</span><span>·</span>
+    <span>ENTREGA NA BEIRA</span><span>·</span>
+    <span>SOFALA &amp; MOÇAMBIQUE</span><span>·</span>
+    <span>NOVAS CHEGADAS</span><span>·</span>
+    <span>QUALIDADE PREMIUM</span><span>·</span>
+    <span>ENTREGA NA BEIRA</span><span>·</span>
+    <span>SOFALA &amp; MOÇAMBIQUE</span><span>·</span>
+    <span>NOVAS CHEGADAS</span><span>·</span>
+  </div>
+</div>
+
+<!-- CATALOG -->
+<section id="catalogo" class="catalog">
+  <div class="section-header">
+    <p class="section-label">— Colecção</p>
+    <h2 class="section-title">CATÁLOGO</h2>
+  </div>
+
+  <!-- FILTER -->
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="masculino">Masculino</button>
+    <button class="filter-btn" data-filter="feminino">Feminino</button>
+    <button class="filter-btn" data-filter="unissex">Unissex</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="product-grid" id="productGrid">
+    <!-- Products injected by JS -->
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="sobre">
+  <div class="sobre-inner">
+    <div class="sobre-text">
+      <p class="section-label">— A Nossa História</p>
+      <h2>MAIS QUE<br/>UMA MARCA</h2>
+      <p>A <strong>DERWIN</strong> nasceu em Beira com uma missão simples: trazer sapatilhas de qualidade premium para Moçambique. Cada par é cuidadosamente seleccionado para garantir estilo, conforto e durabilidade.</p>
+      <p>Servimos clientes em toda a província de Sofala e Moçambique, com entregas rápidas e atendimento personalizado.</p>
+      <div class="stats">
+        <div class="stat"><span class="stat-num">500+</span><span class="stat-label">Clientes</span></div>
+        <div class="stat"><span class="stat-num">50+</span><span class="stat-label">Modelos</span></div>
+        <div class="stat"><span class="stat-num">3</span><span class="stat-label">Zonas</span></div>
+      </div>
+    </div>
+    <div class="sobre-visual">
+      <div class="sobre-card">
+        <div class="sobre-icon">📦</div>
+        <h3>Entrega Rápida</h3>
+        <p>Entregamos em Beira e toda a Sofala em 24–48h</p>
+      </div>
+      <div class="sobre-card">
+        <div class="sobre-icon">✅</div>
+        <h3>Qualidade Garantida</h3>
+        <p>Todos os pares passam por controlo de qualidade</p>
+      </div>
+      <div class="sobre-card">
+        <div class="sobre-icon">💬</div>
+        <h3>Suporte Pessoal</h3>
+        <p>Atendimento via WhatsApp e chamada</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" class="contacto">
+  <div class="contacto-inner">
+    <div class="contacto-text">
+      <p class="section-label">— Fale Connosco</p>
+      <h2>ENCOMENDAR<br/>AGORA</h2>
+      <p>Pronto para o seu próximo par? Contacte-nos via WhatsApp ou preencha o formulário.</p>
+      <a href="https://wa.me/258000000000?text=Olá%20DERWIN!%20Quero%20encomendar%20sapatilhas." class="whatsapp-btn" target="_blank">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+    <form class="contact-form" id="contactForm">
+      <div class="form-group">
+        <label>Nome Completo</label>
+        <input type="text" placeholder="Seu nome" required />
+      </div>
+      <div class="form-group">
+        <label>Telefone / WhatsApp</label>
+        <input type="tel" placeholder="+258 8X XXX XXXX" required />
+      </div>
+      <div class="form-group">
+        <label>Cidade</label>
+        <select required>
+          <option value="">Seleccionar cidade</option>
+          <option>Beira</option>
+          <option>Dondo</option>
+          <option>Sofala (outra zona)</option>
+          <option>Outro</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Mensagem / Modelo pretendido</label>
+        <textarea rows="4" placeholder="Descreva o que procura…"></textarea>
+      </div>
+      <button type="submit" class="btn-primary">Enviar Encomenda</button>
+      <div class="form-success" id="formSuccess">✅ Recebido! Entraremos em contacto em breve.</div>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-logo">DERWIN</div>
+    <p class="footer-tagline">Pisa com Estilo · Beira · Sofala · Moçambique</p>
+    <div class="footer-links">
+      <a href="#catalogo">Catálogo</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+    <p class="footer-copy">© 2025 DERWIN. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal" id="modal">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-img-wrap">
+      <img id="modalImg" src="" alt="" />
+      <div class="modal-badge" id="modalBadge"></div>
+    </div>
+    <div class="modal-info">
+      <p class="modal-cat" id="modalCat"></p>
+      <h2 class="modal-name" id="modalName"></h2>
+      <p class="modal-price" id="modalPrice"></p>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-sizes" id="modalSizes"></div>
+      <a id="modalWA" href="#" target="_blank" class="btn-primary modal-wa">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Encomendar via WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ADMIN TOGGLE -->
+<button class="admin-toggle" id="adminToggle" title="Painel Admin">⚙</button>
+
+<!-- ADMIN PANEL -->
+<div class="admin-panel" id="adminPanel">
+  <div class="admin-header">
+    <h3>Painel DERWIN</h3>
+    <button id="adminClose">✕</button>
+  </div>
+  <div class="admin-body">
+    <p class="admin-hint">Adicione sapatilhas ao seu catálogo aqui.</p>
+    <div class="admin-form">
+      <div class="form-group">
+        <label>Nome do Modelo</label>
+        <input type="text" id="aName" placeholder="Ex: Air Force 1 Low" />
+      </div>
+      <div class="form-group">
+        <label>Categoria</label>
+        <select id="aCat">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="unissex">Unissex</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Preço (MZN)</label>
+        <input type="number" id="aPrice" placeholder="Ex: 4500" />
+      </div>
+      <div class="form-group">
+        <label>Descrição</label>
+        <textarea id="aDesc" rows="3" placeholder="Descrição detalhada do modelo, materiais, conforto…"></textarea>
+      </div>
+      <div class="form-group">
+        <label>Tamanhos disponíveis (separados por vírgula)</label>
+        <input type="text" id="aSizes" placeholder="Ex: 38,39,40,41,42,43" />
+      </div>
+      <div class="form-group">
+        <label>URL da Imagem</label>
+        <input type="url" id="aImg" placeholder="https://…" />
+      </div>
+      <div class="form-group">
+        <label>Estado</label>
+        <select id="aStatus">
+          <option value="">Disponível</option>
+          <option value="novo">Novo</option>
+          <option value="esgotado">Esgotado</option>
+          <option value="promo">Promoção</option>
+        </select>
+      </div>
+      <button class="btn-primary" id="addProductBtn">Adicionar ao Catálogo</button>
+      <div class="admin-success" id="adminSuccess">✅ Produto adicionado!</div>
+    </div>
+    <hr/>
+    <div class="admin-list" id="adminList"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
